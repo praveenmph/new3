@@ -1,0 +1,76 @@
+
+write.table(snor, file= "snor.txt", quote = F,row.names = F)
+mark <- read.csv("marks.csv")
+View(mark)
+write.table(mark, file= "mark.txt", quote = T,row.names = T)
+rm(snor)
+names(mark)
+mean(mark$tam)
+attach(mark)
+levels(sex)
+class(tam)
+class(sex)
+sex <- as.factor(sex)
+summary(mark)
+summary(sex)
+mark[c(2,4,7),] 
+mark
+mean(tam[sex=="male"])
+mean(tam[sex=="female"])
+mean(tam)
+(47.5*6)+(47.25*4)
+474/10
+levels(sex)
+
+attach(mark)
+
+
+
+apply(mark,2,mean, na.rm=T)
+sd(tam)
+apply(mark,2,sd)
+mark$sex = factor(mark$sex)
+summary(mark)(mark)
+apply(mark,2,sd,na.rm = T)
+
+table(sex)/length(sex)*100
+fx <- read.csv("D:/r/rdir/iris_output.csv")
+View(fx)
+attach(ster)
+Species
+table(Species)
+
+rm()
+class(sex)
+BMI_cat = as.factor(BMI_cat)
+class(BMI_cat)
+table(BMI_cat,sex)
+tab(BMI_cat,sex)
+summary(ster)
+
+names(ster)
+hist(height, prob =T, breaks = 39)
+hist(height, freq =T, breaks = 39)
+hist(height, prob =T, xlim = c(140,180), breaks = 39)
+
+remove(lines(density(height), col = 4, lwd = 2))
+curve(dnorm(x, mean=m, sd=std), col="darkblue", lwd=2, add=TRUE)
+m<-mean(height);std<-sqrt(var(height))
+
+par(mfrow=c(2,2))
+hist(systolicbaseline);hist(diastolicbaseline);hist(systolicday1);hist(diastolicday1)
+
+
+qqnorm(height)
+qqline(height)
+qqnorm(Age)
+qqline(Age)
+boxplot(height ~ BMI_cat, ylim = c(145,180))
+names(ster)
+plot(height,weight)
+
+
+
+
+
+
